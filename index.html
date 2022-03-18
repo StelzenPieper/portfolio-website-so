@@ -6,32 +6,41 @@
         <title>Sebastian Ottow</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- CSS -->
         <link rel="stylesheet" href="/assets/styles/styles.css">
+        
+        <!-- FONT -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
+
+        <!-- ICONSCOUT -->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     </head>
     <body>
 
         <header>
-            <h1>Sebastian Ottow</h1>
-            <nav>
-                <a href="#socials">My Socials</a>
-                <a href="#current_project">Current Project</a>
-                <a href="#biography">Biography</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#contact">Contact</a>
+            <h1 class="logo">Sebastian Ottow</h1>
+            <nav class="navigation">
+                <a class="nav--link" href="#socials">My Socials</a>
+                <a class="nav--link" href="#current_project">Current Project</a>
+                <a class="nav--link" href="#biography">Biography</a>
+                <a class="nav--link" href="#portfolio">Portfolio</a>
+                <a class="nav--link" href="#contact">Contact</a>
             </nav>
         </header>
 
         <main>
-            <section>
-                <img src="/assets/img/SebastianOttow_small.jpeg" alt="sebastian ottow" width="250" height="100%">
-                <p>I am Sebastian</p>
-                <p>Web Developer, Product Manager and Entrepreneur</p>
-                <p>located in Icking, Bavaria</p>
+            <section class="hero">
+                    <p class="hero--title">Sebastian Ottow</p>
+                    <p class="hero--description">Web Developer | Product Manager | Entrepreneur</p>
+                    <p>located in Icking, Bavaria</p>
             </section>
 
-            <section id="socials">
-                <p >Let's connect on <a href="https://www.linkedin.com/in/sebastian-ottow/" target="_blank">LinkedIn</a><img src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg" alt="linkedin logo" width="25px" height="100%"></p>
-                <p>Check my projects on <a href="https://github.com/StelzenPieper">GitHub</a><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="github logo" width="25px" height="100%"></p>
+            <section class="social--links" id="socials">
+                <p >Let's connect on <a href="https://www.linkedin.com/in/sebastian-ottow/" target="_blank">LinkedIn</a><img class="social--icon linkedin" src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg" alt="linkedin logo" width="25px" height="100%"></p>
+                <p>Check my projects on <a href="https://github.com/StelzenPieper">GitHub</a><img class="social--icon github" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="github logo" width="25px" height="100%"></p>
             </section>
 
             <section id="contact">
@@ -40,6 +49,35 @@
                     <button><a href="tel:01604407044">Call Me</a></button>
                 </address>
             </section>            
+
+            <section id="portfolio">
+                <div class="wrapper">
+                    <div class="cards">
+                        <img class="card--img" src="/assets/img/Animated Shape.svg" alt="project one">
+                        <p class="card--title">Portfolio Project 1</p>
+                        <p class="card--description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, at sed.</p>
+                        <div>
+                        <a href="https://github.com/StelzenPieper" target="_blank"><i class="uil uil-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <img class="card--img" src="/assets/img/Animated Shape.svg" alt="project two">
+                        <p class="card--title">Portfolio Project 2</p>
+                        <p class="card--description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, at sed.</p>
+                        <div>
+                        <a href="https://github.com/StelzenPieper" target="_blank"><i class="uil uil-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <img class="card--img" src="/assets/img/Animated Shape.svg" alt="project three">
+                        <p class="card--title">Portfolio Project 3</p>
+                        <p class="card--description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, at sed.</p>
+                        <div>
+                        <a href="https://github.com/StelzenPieper" target="_blank"><i class="uil uil-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <section id="current_project">
                 <h2 >Current Project</h2>
