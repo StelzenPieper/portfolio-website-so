@@ -45,6 +45,7 @@ header {
 
 /*---------- HERO ---------*/
 .hero {
+  background-image: url("/assets/img/Animated\ Shape.svg");
   min-height: 700px;
   width: auto;
   background-color: blue;
@@ -84,6 +85,7 @@ header {
 
 .cards {
   height: auto;
+  width: 90%;
   max-width: 800px;
   padding: 15px;
   display: flex;
