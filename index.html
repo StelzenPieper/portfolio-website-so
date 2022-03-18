@@ -20,38 +20,36 @@
     </head>
     <body>
 
-        <header>
-            <h1 class="logo">Sebastian Ottow</h1>
-            <nav class="navigation">
-                <a class="nav--link" href="#socials">My Socials</a>
-                <a class="nav--link" href="#current_project">Current Project</a>
-                <a class="nav--link" href="#biography">Biography</a>
+        <header class="header">
+            <div class="container--nav">
+                <p class="logo">Sebastian Ottow</p>
+                <nav class="navigation">
                 <a class="nav--link" href="#portfolio">Portfolio</a>
-                <a class="nav--link" href="#contact">Contact</a>
-            </nav>
+                <a class="nav--link" href="#biography">Biography</a>
+                <a class="nav--link" href="#contact"><button class="btn contact--btn">Contact</button></a>
+                </nav>
+            </div>
+            <section class="hero">
+                <p class="hero--title">Sebastian Ottow</p>
+                <p class="hero--skills">Web Developer | Product Manager | Entrepreneur</p>
+                <p class="hero--location">located in Icking, Bavaria</p>
+            </section>
         </header>
 
         <main>
-            <section class="hero">
-                    <p class="hero--title">Sebastian Ottow</p>
-                    <p class="hero--description">Web Developer | Product Manager | Entrepreneur</p>
-                    <p>located in Icking, Bavaria</p>
+            <section class="socials" id="socials">
+                <div class="social--links">
+                <p>Let's connect on <a href="https://www.linkedin.com/in/sebastian-ottow/" target="_blank">
+                    LinkedIn <i class="uil uil-linkedin"></i></a></p>
+                <p>Check my projects on <a href="https://github.com/StelzenPieper">GitHub <i class="uil uil-github"></i></a></p>
+                </div>
             </section>
 
-            <section class="social--links" id="socials">
-                <p >Let's connect on <a href="https://www.linkedin.com/in/sebastian-ottow/" target="_blank">LinkedIn</a><img class="social--icon linkedin" src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg" alt="linkedin logo" width="25px" height="100%"></p>
-                <p>Check my projects on <a href="https://github.com/StelzenPieper">GitHub</a><img class="social--icon github" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="github logo" width="25px" height="100%"></p>
-            </section>
-
-            <section id="contact">
-                <address>
-                    <button ><a href="email:seb.ottow@gmail.com">Shoot Me a Message</a></button>
-                    <button><a href="tel:01604407044">Call Me</a></button>
-                </address>
-            </section>            
+       
 
             <section id="portfolio">
                 <div class="wrapper">
+                    <h2>Checkout my portfolio!</h2>
                     <article class="cards">
                         <img class="card--img" src="/assets/img/Animated Shape.svg" alt="project one">
                         <div class="card--text">
@@ -85,8 +83,15 @@
                 </div>
             </section>
 
+            <section id="contact">
+                <address>
+                    <button ><a href="email:seb.ottow@gmail.com">Shoot Me a Message</a></button>
+                    <button><a href="tel:01604407044">Call Me</a></button>
+                </address>
+            </section>     
+
             <section id="current_project">
-                <h2 >Current Project</h2>
+                <h2 >What I'm currently working on</h2>
                 <h3>BootCamp: Web Developer by <a href="https://www.neuefische.de/weiterbildung/web-development" target="_blank">NeueFische</a></h3>
                 <p>03/2022 - 06/2022</p>
                 <figure>

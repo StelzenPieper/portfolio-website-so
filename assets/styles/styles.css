@@ -1,3 +1,14 @@
+:root {
+  --main-font-color-dark: black;
+  --main-font-color-light: white;
+  --font-color-grey: grey;
+  --backround-color-dark: hsl(259, 100%, 32%);
+  --background-color-light: white;
+  --bottom-margin: 80px;
+  --font-size-title: 2.4rem;
+  --font-size-text: 2rem;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,43 +24,71 @@ body {
   background-color: white;
 }
 
+a {
+  text-decoration: none;
+}
+
 /*---------- NAV ---------*/
-header {
-  padding: 20px;
-  background-color: transparent;
-  background-image: url("/assets/img/Animated\ Shape.svg");
+.header {
+  width: 100%;
+  height: auto;
+  margin-bottom: var(--bottom-margin);
   display: flex;
+  flex-direction: column;
+  background-image: url("/assets/img/Animated\ Shape.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container--nav {
+  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
 
 .logo {
-  color: white;
-  text-align: center;
+  color: var(--main-font-color-light);
   font-weight: 200;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  padding: 20px 0 20px 20px;
 }
 
 .navigation {
-  margin: 5px 0 5px 0;
+  margin-right: 20px;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
 }
 
 .nav--link {
-  color: white;
+  color: var(--main-font-color-light);
   text-decoration: none;
-  margin: 0 5px 0 5px;
+  margin: 0 10px 0 10px;
   font-weight: 200;
-  font-size: 1rem;
+  font-size: 1.2rem;
+}
+
+/*---------- BUTTON ---------*/
+.btn {
+  background-color: var(--background-color-light);
+  color: var(--backround-color-dark);
+  border-radius: 20px;
+  border: none;
+  padding: 4px 8px 4px 8px;
+  font-size: 1.2rem;
+  font-weight: 200;
+  cursor: pointer;
+  text-align: center;
 }
 
 /*---------- HERO ---------*/
 .hero {
   min-height: 700px;
   width: auto;
-  background-color: blue;
   font-size: 1.5rem;
-  color: grey;
+  color: var(--font-color-grey);
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -63,19 +102,39 @@ header {
   color: white;
 }
 
-.hero--description {
+.hero--skills {
   font-size: 2.5rem;
   margin-bottom: 5px;
 }
 
-/*---------- SOCIALS ---------*/
-.social--icon {
-  padding: 5px;
+.hero--location {
+  font-size: 1rem;
+  color: white;
 }
 
-/*---------- PORTFOLIO-CARDS ---------*/
+/*---------- SOCIALS ---------*/
+.socials {
+  margin-bottom: var(--bottom-margin);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.social--links {
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+.uil {
+  font-size: var(--font-size-text);
+  color: var(--backround-color-dark);
+}
+
+/*---------- PORTFOLIO ---------*/
 .wrapper {
-  margin: 40px 20px 40px 20px;
+  margin: var(--bottom-margin);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -84,6 +143,7 @@ header {
 
 .cards {
   height: auto;
+  width: 90%;
   max-width: 800px;
   padding: 15px;
   display: flex;
@@ -116,9 +176,4 @@ header {
 .card--description {
   font-weight: 200;
   margin: 0 0 5px 0;
-}
-
-.uil {
-  font-size: 1.2rem;
-  color: hsl(259, 100%, 32%);
 }
