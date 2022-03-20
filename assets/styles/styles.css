@@ -1,12 +1,15 @@
 :root {
   --main-font-color-dark: black;
   --main-font-color-light: white;
-  --font-color-grey: grey;
+  --font-color-grey-dark: hsl(254, 0%, 10%);
+  --font-color-grey-light: hsl(254, 1%, 50%);
   --backround-color-dark: hsl(259, 100%, 32%);
   --background-color-light: white;
-  --bottom-margin: 80px;
-  --font-size-title: 2.4rem;
-  --font-size-text: 2rem;
+  --section-margin: 80px 0 80px 0;
+  --font-size-title-big: 2rem;
+  --font-size-title-small: 1.6rem;
+  --font-size-title-xsmall: 1.3rem;
+  --font-size-text: 1.1rem;
 }
 
 * {
@@ -26,13 +29,78 @@ body {
 
 a {
   text-decoration: none;
+  color: var(--backround-color-dark);
+}
+
+.title--big {
+  font-weight: 300;
+  font-size: var(--font-size-title-big);
+  color: var(--font-color-grey-dark);
+  margin-bottom: 30px;
+  text-decoration: underline;
+}
+
+.title--small {
+  font-weight: 200;
+  font-size: var(--font-size-title-small);
+  color: var(--font-color-grey-dark);
+  margin-bottom: 20px;
+}
+
+.title--xsmall {
+  font-weight: 200;
+  font-size: var(--font-size-title-xsmall);
+  color: var(--font-color-grey-dark);
+  margin-bottom: 20px;
+}
+
+.main--wrapper {
+  padding: 0 20px 0 20px;
+}
+
+/*---------- BUTTON ---------*/
+.btn--contact {
+  background: white;
+  color: var(--main-font-color-dark);
+  font-weight: 200;
+  border-radius: 20px;
+  padding: 3px 8px 3px 8px;
+  font-size: var(--font-size-text);
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn--contact:hover {
+  background: transparent;
+  color: var(--main-font-color-light);
+  transform: scale(1.5);
+  transition: 0.3s ease-in-out;
+}
+
+.btn-cta {
+  background-color: var(--background-color-light);
+  border: none;
+  box-shadow: 0 0 10px 6px rgba(242, 242, 242, 0.8);
+  min-width: 100px;
+  padding: 8px;
+  font-weight: 200;
+  font-size: var(--font-size-text);
+  border-radius: 100px;
+  margin: 0 40px 0 40px;
+  transition: ;
+  cursor: pointer;
+}
+
+.btn-cta:hover {
+  transform: scale(1.4);
+  transition: 0.3s ease-in-out;
 }
 
 /*---------- NAV ---------*/
 .header {
   width: 100%;
   height: auto;
-  margin-bottom: var(--bottom-margin);
   display: flex;
   flex-direction: column;
   background-image: url("/assets/img/Animated\ Shape.svg");
@@ -43,23 +111,27 @@ a {
 .container--nav {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .logo {
   color: var(--main-font-color-light);
   font-weight: 200;
-  font-size: 1.5rem;
+  font-size: var(--font-size-title-big);
   padding: 20px 0 20px 20px;
 }
 
 .navigation {
   margin-right: 20px;
+  margin-left: 20px;
   text-align: center;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .nav--link {
@@ -67,20 +139,40 @@ a {
   text-decoration: none;
   margin: 0 10px 0 10px;
   font-weight: 200;
-  font-size: 1.2rem;
+  font-size: var(--font-size-text);
 }
 
-/*---------- BUTTON ---------*/
-.btn {
-  background-color: var(--background-color-light);
-  color: var(--backround-color-dark);
-  border-radius: 20px;
-  border: none;
-  padding: 4px 8px 4px 8px;
-  font-size: 1.2rem;
-  font-weight: 200;
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  width: 22px;
+  margin: 0 20px 0 20px;
   cursor: pointer;
-  text-align: center;
+}
+
+.hamburger span {
+  background: white;
+  border-radius: 10px;
+  height: 3px;
+  margin: 2px 0 2px 0;
+}
+
+.hamburger span:nth-child(1) {
+  width: 50%;
+}
+
+.hamburger span:nth-child(2) {
+  width: 100%;
+}
+
+.hamburger span:nth-child(3) {
+  width: 75%;
+}
+
+@media only screen and (max-width: 768px) {
+  .menu--options {
+    display: none;
+  }
 }
 
 /*---------- HERO ---------*/
@@ -88,7 +180,7 @@ a {
   min-height: 700px;
   width: auto;
   font-size: 1.5rem;
-  color: var(--font-color-grey);
+  color: var(--font-color-grey-light);
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -114,10 +206,11 @@ a {
 
 /*---------- SOCIALS ---------*/
 .socials {
-  margin-bottom: var(--bottom-margin);
-  padding: 20px;
+  margin: var(--section-margin);
+  min-height: 200px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -125,6 +218,8 @@ a {
 .social--links {
   font-size: 2rem;
   font-weight: 200;
+  color: var(--font-color-grey-dark);
+  text-align: center;
 }
 
 .uil {
@@ -133,12 +228,18 @@ a {
 }
 
 /*---------- PORTFOLIO ---------*/
-.wrapper {
-  margin: var(--bottom-margin);
+.portfolio--wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
+  margin: var(--section-margin);
+}
+
+.card--list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
 .cards {
@@ -151,7 +252,13 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   border-radius: 8px;
-  box-shadow: 0 0 5px 2px rgba(242, 242, 242, 0.8);
+  box-shadow: 0 0 10px 6px rgba(242, 242, 242, 0.8);
+}
+
+.cards:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
 }
 
 .card--img {
@@ -176,4 +283,62 @@ a {
 .card--description {
   font-weight: 200;
   margin: 0 0 5px 0;
+}
+
+/*---------- CONTACT ---------*/
+.contact--wrapper {
+  min-height: 200px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  margin: var(--section-margin);
+}
+
+.uil-message {
+  color: var(--backround-color-dark);
+  font-size: var(--font-size-title-big);
+}
+
+.uil-phone {
+  color: var(--backround-color-dark);
+  font-size: var(--font-size-title-big);
+}
+
+/*---------- MY CURRENT PROJECT ---------*/
+.project--wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: var(--section-margin);
+}
+
+.project--list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.project--list--item {
+  list-style: none;
+  font-weight: 300;
+  width: 350px;
+  min-width: 250px;
+  padding: 15px 15px 15px 15px;
+  font-size: var(--font-size-title-small);
+  border-radius: 8px;
+  box-shadow: 0 0 5px 2px rgba(242, 242, 242, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.project--list--list {
+  padding-left: 25px;
+  font-weight: 200;
+  font-size: var(--font-size-text);
 }
