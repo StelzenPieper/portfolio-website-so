@@ -20,38 +20,75 @@
     </head>
     <body>
 
-        <header>
-            <h1 class="logo">Sebastian Ottow</h1>
-            <nav class="navigation">
-                <a class="nav--link" href="#socials">My Socials</a>
-                <a class="nav--link" href="#current_project">Current Project</a>
-                <a class="nav--link" href="#biography">Biography</a>
-                <a class="nav--link" href="#portfolio">Portfolio</a>
-                <a class="nav--link" href="#contact">Contact</a>
-            </nav>
+        <header class="header">
+            <div class="container--nav">
+                <p class="logo">Sebastian Ottow</p>
+                <nav class="navigation">
+                    <a class="nav--link" href="#contact"><button class="btn btn--contact">Contact</button></a>
+                    <div class="menu--options">
+                        <a class="nav--link link" href="#portfolio">Portfolio</a>
+                        <a class="nav--link link" href="#project">Project</a>
+                    </div>
+                    <div class="sidebar">
+                        <label for="check" class="hamburger">
+                            <!-- input type="checkbox" id="check" -->
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </label>
+                    </div>
+                </nav>
+            </div>
+            <section class="hero">
+                <h1 class="hero--title">Sebastian Ottow</h1>
+                <h2 class="hero--skills">Web Developer | Product Manager | Entrepreneur</h2>
+                <h3 class="hero--location">located in Icking, Bavaria</h3>
+            </section>
         </header>
 
         <main>
-            <section class="hero">
-                    <p class="hero--title">Sebastian Ottow</p>
-                    <p class="hero--description">Web Developer | Product Manager | Entrepreneur</p>
-                    <p>located in Icking, Bavaria</p>
+            <div class="main--wrapper">
+
+                <section>
+                    <article class="introduction">
+                        <div class="profile--img"></div>
+                        <a href="/assets/src/CV Sebastian Ottow_2022_eng.pdf" target="_blank">view my CV</a>
+                    </article>
+                </section>
+
+            <section class="socials" id="socials">
+                <div class="social--links">
+                <p>let's connect on <a href="https://www.linkedin.com/in/sebastian-ottow/" target="_blank">
+                    LinkedIn <i class="uil uil-linkedin"></i></a></p>
+                <p>my projects on <a href="https://github.com/StelzenPieper" target="_blank">GitHub <i class="uil uil-github"></i></a></p><p>follow me on <a href="https://codepen.io/stelzenpieper" target="_blank">CodePen</a></p>
+                </div>
             </section>
 
-            <section class="social--links" id="socials">
-                <p >Let's connect on <a href="https://www.linkedin.com/in/sebastian-ottow/" target="_blank">LinkedIn</a><img class="social--icon linkedin" src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg" alt="linkedin logo" width="25px" height="100%"></p>
-                <p>Check my projects on <a href="https://github.com/StelzenPieper">GitHub</a><img class="social--icon github" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="github logo" width="25px" height="100%"></p>
+            <section id="skills">
+                <div class="skills--wrapper">
+                    <h2 class="title--big">my skills</h2>
+                    <div class="skill-list">
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>REACT</li>
+                            <li>MongoDB</li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
             </section>
-
-            <section id="contact">
-                <address>
-                    <button ><a href="email:seb.ottow@gmail.com">Shoot Me a Message</a></button>
-                    <button><a href="tel:01604407044">Call Me</a></button>
-                </address>
-            </section>            
 
             <section id="portfolio">
-                <div class="wrapper">
+                <div class="portfolio--wrapper">
+                <h2 class="title--big">my portfolio</h2>
+                <div class="card--list">
                     <article class="cards">
                         <img class="card--img" src="/assets/img/Animated Shape.svg" alt="project one">
                         <div class="card--text">
@@ -83,31 +120,42 @@
                         </div>
                     </article>
                 </div>
+            </div>
             </section>
 
-            <section id="current_project">
-                <h2 >Current Project</h2>
-                <h3>BootCamp: Web Developer by <a href="https://www.neuefische.de/weiterbildung/web-development" target="_blank">NeueFische</a></h3>
-                <p>03/2022 - 06/2022</p>
-                <figure>
-                    <figcaption>Skills acquired:</figcaption>
-                    <ul>
-                        <li>Shell
-                            <ul>
+            <section id="contact">
+                <div class="contact--wrapper">
+                    <h2 class="title--big">Let's get in touch:</h2>
+                    <address>
+                        <a href="mailto:seb.ottow@gmail.com">
+                        <button class="btn btn-cta"><i class="uil uil-message"></i></button></a>
+                        <a href="tel:+491604407044"><button class="btn btn-cta"><i class="uil uil-phone"></i></button></a>
+                    </address>
+                 </div>
+            </section>     
+
+            <section class="project" id="project">
+                <div class="project--wrapper">
+                <h2 class="title--big">What I'm currently working on</h2>
+                <h3 class="title--small">BootCamp: Web Developer by <a href="https://www.neuefische.de/weiterbildung/web-development" target="_blank">NeueFische</a></h3>
+                <h4 class="title--xsmall">Runtime: 03/2022 - 06/2022</h4>
+                    <ul class="project--list">
+                        <li class="project--list--item">Shell
+                            <ul class="project--list--list">
                                 <li>Unix-Commands</li>
                                 <li>Git-Commands</li>
                             </ul>
                         </li>
-                        <li>HTML
-                            <ul>
+                        <li class="project--list--item">HTML
+                            <ul class="project--list--list">
                                 <li>HTML5-Elements</li>
                                 <li>Forms & Inputs</li>
                                 <li>Responsive Websites</li>
                                 <li>a11y</li>
                             </ul>
                         </li>
-                        <li>CSS
-                            <ul>
+                        <li class="project--list--item">CSS
+                            <ul class="project--list--list">
                                 <li>Selectors</li>
                                 <li>Specification</li>
                                 <li>Structure</li>
@@ -116,8 +164,8 @@
                                 <li>display: grid</li>
                             </ul>
                         </li>
-                        <li>JavaScript
-                            <ul>
+                        <li class="project--list--item">JavaScript
+                            <ul class="project--list--list">
                                 <li>ECMAScript latest</li>
                                 <li>Events</li>
                                 <li>DOM-Manipulation</li>
@@ -132,8 +180,8 @@
                                 <li>Vite</li>
                             </ul>
                         </li>
-                        <li>Backend
-                            <ul>
+                        <li class="project--list--item">Backend
+                            <ul class="project--list--list">
                                 <li>Rest-API</li>
                                 <li>Node.js</li>
                                 <li>Express.js</li>
@@ -143,8 +191,8 @@
                                 <li>mongoose</li>
                             </ul>
                         </li>
-                        <li>React
-                            <ul>
+                        <li class="project--list--item">React
+                            <ul class="project--list--list">
                                 <li>Lastest-Version</li>
                                 <li>React Hooks</li>
                                 <li>React Router</li>
@@ -156,16 +204,16 @@
                                 <li>Forms</li>
                             </ul>
                         </li>
-                        <li>Tools
-                            <ul>
+                        <li class="project--list--item">Tools
+                            <ul class="project--list--list">
                                 <li>VS Code</li>
                                 <li>Postman / Roboto3T / RestClient</li>
                                 <li>Figma</li>
                                 <li>Slack</li>
                             </ul>
                         </li>
-                        <li>Further Topics included
-                            <ul>
+                        <li class="project--list--item">Further Topics included
+                            <ul class="project--list--list">
                                 <li>Clean Code</li>
                                 <li>Git-Work-Flow with GitHub</li>
                                 <li>Agile Methodology with Scrum & Kanban</li>
@@ -174,142 +222,11 @@
                             </ul>
                         </li>
                     </ul>
-                </figure>
+                </div>
             </section>
-
-                <section id="biography">
-                    <h2 >BIOGRAPHY:</h2>
-
-                    <section>
-                    <h2>Work Experience</h2>
-                    <article>
-                        <h3>CEO & Managing Director</h3>
-                        <p><em>Company: Car Information Services GmbH, remote</em></p>
-                        <p>08/2021 - 03/2022</p>
-                        <p>Core projects: (1) Development of proof of concept & MVP, (2) Development of business model & business case, (3) Pitching and winning over new customers & investors, (4) Development of a market entry strategy</p>
-                        <ul>
-                            <li>Definition of CarPass business model and case</li>
-                            <li>Formulating the requirements and managing the development of the digital CarPass MVP WebApp Platform solution</li>
-                            <li>Shareholder management / Pitching for new investors</li>
-                            <li>Negotiation of partner contracts, customer contracts and project assignment for external service providers</li>
-                        </ul>
-                    </article>
-
-                    <article>
-                        <h3>Senior Manager & Teamlead Product</h3>
-                        <p><em>Sixt Leasing SE, Pullach</em></p>
-                        <p>02/2019 - 07/2021</p>
-                        <p>Core projects: (1) Development of a “Wartung & Verschleiß” Pricing Engine, (2) Implementation of third-party software to increase efficiency, (3) Development “Händlerportal”, (4) Teamlead product management & taskforce member change management</p>
-                        <ul>
-                            <li>Definition of business requirements for “Wartung & Verschleiß” Kfz- products, calculation logics and product diversification</li>
-                            <li>Managing the development of multiple software development and integration projects</li>
-                            <li>Close collaboration with business departments and operational service departments</li>
-                            <li>Negotiation of partner contracts and project assignment for external service providers</li>
-                        </ul>
-                    </article>
-
-                    <article>
-                        <h3>Business & Product Development</h3>
-                        <p><em>Travel24.com AG, Leipzig</em></p>
-                        <p>01/2017 - 01/2019</p>
-                        <p>Core projects: (1) Relaunch and Development of the Travel24.com online travel booking website, (2) Strategy Online Marketing and Traffic Management</p>
-                        <ul>
-                            <li>Innovation and Product Management; development of a growth strategy for the travel and flight sectors</li>
-                            <li>Managing and building Cross-Sales and After-Sales programs and CRM initiatives</li>
-                            <li>Operational and strategic responsibility of the areas Traffic Management and Online Marketing (SEM, Display, Social Media)</li>
-                            <li>Negotiation of partner contracts and project assignment for external service providers</li>
-                        </ul>
-                    </article>
-
-                    <article>
-                        <h3>Co-Marketing Executive (previously intern)</h3>
-                        <p><em>PayPal, Berlin</em></p>
-                        <p>06/2015 - 04/2016</p>
-                        <p>Core projects: (1) Relaunch of the redesigned PayPal App in DACH region, (2) Development of Marketing Strategy for PayPal Gifts</p>
-                        <ul>
-                            <li>Responsibility for Marketing Management and support of Product Development of the new PayPal App in DACH region</li>
-                            <li>Establishing SEM and Display Marketing Reporting with focus on CPC, CPO and CVR</li>
-                            <li>Conception of seasonal and weekly Newsletters in connection with other Marketing measures</li>
-                            <li>Co-Marketing and Product Development of PayPal Gifts</li>
-                            <li>Conception and Implementation of Marketing Strategies for the
-                                PayPal App, PayPal.me and PayPal Send Money (P2P)</li>
-                        </ul>
-                    </article>
-                </section>
-
-                <section>
-                    <h2>Education</h2>
-
-                    <article>
-                        <h3>Master International Marketing Management</h3>
-                        <p><em>Hochschule für Wirtschaft und Recht, Berlin</em></p>
-                        <p>10/2014 - 10/2016</p>
-                        <p>International Marketing Management – Master of Arts</p>
-                        <p>Master Thesis: Personalized Pricing in Online Services – A Scientific Approach on Extent of Use and Limitations</p>
-                        <p>Final Grade: 2,5</p>
-                    </article>
-
-                    <article>
-                        <h3>Bachelor Communication Management</h3>
-                        <p><em>Business School Berlin Potsdam, Berlin</em></p>
-                        <p>10/2011 - 08/2014</p>
-                        <p>Communication Management – Bachelor of Arts</p>
-                        <p>Final Grade: 1.9</p>
-                    </article>
-
-                    <article>
-                        <h3>Diploma Fisheries and Aquaculture</h3>
-                        <p><em>Vancouver Island University, Nanaimo, Canada</em></p>
-                        <p>08/2006 - 05/2011</p>
-                        <p>Fisheries and Aquaculture – Canadian Diploma</p>
-                        <p>Final Grade: passed</p>
-                    </article>
-
-                    <article>
-                        <h3>Abitur</h3>
-                        <p><em>Fichtenberg Oberschule, Berlin</em></p>
-                        <p>06/1998 - 04/2006</p>
-                        <p>Final Grade: 3.2</p>
-                    </article>
-
-                </section>
-
-                <section>
-                    <h2>Certificates</h2>
-
-                    <ul>
-                        <li>Agile Methodology</li>
-                        <li>Design Thinking</li>
-                        <li>Lean Startup</li>
-                        <li>Business Model Generation</li>
-                    </ul>
-                    <p><em>Brainbirds GmbH</em></p>
-                    <p>05/2019 - 09/2019</p>
-                </section>
-
-                <section>
-                    <h2>Experience Abroad</h2>
-
-                    <article>
-                        <h3>University Studies, Canada</h3>
-                        <p><em>Nanaimo, British Columbia</em></p>
-                        <p>08/2006 - 05/2011</p>
-                        <p>Studies of Fisheries & Aquaculture at the Vancouver Island University</p>
-                    </article>
-
-                    <article>
-                        <h3>Exchange Student, USA</h3>
-                        <p><em>Gas City, Indiana</em></p>
-                        <p>06/2002 - 05/2003</p>
-                        <p>One-year part of the Highschool grade “Junior”</p>
-                    </article>
-                </section>
-
-            </section>
-
         </main>
 
-        <footer>
+        <footer class="footer">
             <a href="#impressum">IMPRESSUM</a>
             <a href="#datenschutz">DATENSCHUTZ</a>
         </footer>
