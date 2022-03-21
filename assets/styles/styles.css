@@ -74,8 +74,7 @@ a {
 .btn--contact:hover {
   background: transparent;
   color: var(--main-font-color-light);
-  transform: scale(1.5);
-  transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .btn-cta {
@@ -88,7 +87,6 @@ a {
   font-size: var(--font-size-text);
   border-radius: 100px;
   margin: 0 40px 0 40px;
-  transition: ;
   cursor: pointer;
 }
 
@@ -103,15 +101,17 @@ a {
   height: auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-image: url("/assets/img/Animated\ Shape.svg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .container--nav {
+  max-width: 1040px;
   display: flex;
   flex-direction: row;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   width: 100%;
   flex-wrap: wrap;
@@ -140,6 +140,15 @@ a {
   margin: 0 10px 0 10px;
   font-weight: 200;
   font-size: var(--font-size-text);
+}
+
+.nav--link:hover {
+  color: var(--font-color-grey-light);
+  transition: 0.2s ease-in-out;
+}
+
+.nav--link:active {
+  text-decoration: underline;
 }
 
 .hamburger {
@@ -175,9 +184,15 @@ a {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+}
+
 /*---------- HERO ---------*/
 .hero {
-  min-height: 700px;
+  min-height: 703px;
   width: auto;
   font-size: 1.5rem;
   color: var(--font-color-grey-light);
@@ -190,6 +205,7 @@ a {
 
 .hero--title {
   font-size: 3rem;
+  font-weight: 200;
   margin-bottom: 5px;
   color: white;
 }
@@ -197,11 +213,30 @@ a {
 .hero--skills {
   font-size: 2.5rem;
   margin-bottom: 5px;
+  font-weight: 200;
 }
 
 .hero--location {
   font-size: 1rem;
   color: white;
+  font-weight: 200;
+}
+
+/*---------- INTRODUCTION ---------*/
+.introduction {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin: var(--section-margin);
+}
+
+.profile--img {
+  background-image: url(/assets/img/SebastianOttow_small.jpeg);
+  background-size: cover;
+  background-position: 50% 25%;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
 }
 
 /*---------- SOCIALS ---------*/
@@ -225,6 +260,14 @@ a {
 .uil {
   font-size: var(--font-size-text);
   color: var(--backround-color-dark);
+}
+
+/*---------- SKILLS ---------*/
+.skills--wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: var(--section-margin);
 }
 
 /*---------- PORTFOLIO ---------*/
@@ -256,7 +299,6 @@ a {
 }
 
 .cards:hover {
-  cursor: pointer;
   transform: scale(1.1);
   transition: 0.3s ease-in-out;
 }
@@ -295,11 +337,7 @@ a {
   margin: var(--section-margin);
 }
 
-.uil-message {
-  color: var(--backround-color-dark);
-  font-size: var(--font-size-title-big);
-}
-
+.uil-message,
 .uil-phone {
   color: var(--backround-color-dark);
   font-size: var(--font-size-title-big);
@@ -312,6 +350,7 @@ a {
   flex-wrap: wrap;
   align-items: center;
   margin: var(--section-margin);
+  padding: 0 20px 0 20px;
 }
 
 .project--list {
@@ -341,4 +380,13 @@ a {
   padding-left: 25px;
   font-weight: 200;
   font-size: var(--font-size-text);
+}
+
+/*---------- FOOTER ---------*/
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 40px;
 }
