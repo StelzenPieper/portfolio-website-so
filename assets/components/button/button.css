@@ -17,7 +17,7 @@
   transition: 0.2s ease-in-out;
 }
 
-.btn-cta {
+.btn--cta {
   background-color: var(--background-color-light);
   border: none;
   box-shadow: var(--box-shadow);
@@ -30,7 +30,7 @@
   cursor: pointer;
 }
 
-.btn-cta:hover {
+.btn--cta:hover {
   transform: scale(1.4);
   transition: 0.3s ease-in-out;
 }
