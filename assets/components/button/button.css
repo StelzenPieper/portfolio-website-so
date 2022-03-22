@@ -1,0 +1,36 @@
+/*---------- BUTTON ---------*/
+.btn--contact {
+  background: white;
+  color: var(--main-font-color-dark);
+  font-weight: 200;
+  border-radius: 20px;
+  padding: 3px 8px 3px 8px;
+  font-size: var(--font-size-text);
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn--contact:hover {
+  background: transparent;
+  color: var(--main-font-color-light);
+  transition: 0.2s ease-in-out;
+}
+
+.btn-cta {
+  background-color: var(--background-color-light);
+  border: none;
+  box-shadow: var(--box-shadow);
+  min-width: 100px;
+  padding: 8px;
+  font-weight: 200;
+  font-size: var(--font-size-text);
+  border-radius: 100px;
+  margin: 0 40px 0 40px;
+  cursor: pointer;
+}
+
+.btn-cta:hover {
+  transform: scale(1.4);
+  transition: 0.3s ease-in-out;
+}

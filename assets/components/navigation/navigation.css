@@ -1,0 +1,83 @@
+/*---------- NAV ---------*/
+.container--nav {
+  max-width: 1040px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.logo {
+  color: var(--main-font-color-light);
+  font-weight: 200;
+  font-size: var(--font-size-title-big);
+  padding: 20px 0 20px 20px;
+}
+
+.navigation {
+  margin-right: 20px;
+  margin-left: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav--link {
+  color: var(--main-font-color-light);
+  text-decoration: none;
+  margin: 0 10px 0 10px;
+  font-weight: 200;
+  font-size: var(--font-size-text);
+}
+
+.nav--link:hover {
+  color: var(--font-color-grey-light);
+  transition: 0.2s ease-in-out;
+}
+
+.nav--link:active {
+  text-decoration: underline;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  width: 22px;
+  margin: 0 20px 0 20px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  background: white;
+  border-radius: 10px;
+  height: 3px;
+  margin: 2px 0 2px 0;
+}
+
+.hamburger span:nth-child(1) {
+  width: 50%;
+}
+
+.hamburger span:nth-child(2) {
+  width: 100%;
+}
+
+.hamburger span:nth-child(3) {
+  width: 75%;
+}
+
+@media only screen and (max-width: 768px) {
+  .menu--options {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+}

@@ -1,0 +1,52 @@
+/*---------- PROFILE-CARD ---------*/
+.intro {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin: var(--section-margin);
+}
+
+.intro--wrapper {
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  max-width: 800px;
+  padding: 10px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.intro--content {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.intro--title {
+  text-align: center;
+  font-weight: 200;
+  font-size: var(--font-size-title-small);
+}
+
+.intro--header {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 10px;
+}
+
+/*.intro--header--content {
+}*/
+
+.profile--img {
+  background-image: url(/assets/img/SebastianOttow_small.jpeg);
+  background-size: cover;
+  background-position: 50% 25%;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+
+.intro--rightside {
+  font-size: var(--font-size-text);
+}

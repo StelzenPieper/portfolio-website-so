@@ -1,0 +1,22 @@
+/*---------- SOCIALS ---------*/
+.socials {
+  margin: var(--section-margin);
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.social--links {
+  font-size: 2rem;
+  font-weight: 200;
+  color: var(--font-color-grey-dark);
+  text-align: center;
+}
+
+.uil {
+  font-size: var(--font-size-text);
+  color: var(--backround-color-dark);
+}

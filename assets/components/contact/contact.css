@@ -1,0 +1,15 @@
+/*---------- CONTACT ---------*/
+.contact--wrapper {
+  min-height: 200px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  margin: var(--section-margin);
+}
+
+.uil-message,
+.uil-phone {
+  color: var(--backround-color-dark);
+  font-size: var(--font-size-title-big);
+}
