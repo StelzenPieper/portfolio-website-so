@@ -18,7 +18,7 @@ a {
   color: var(--backround-color-dark);
 }
 
-.title--big {
+.title__big {
   font-weight: 300;
   font-size: var(--font-size-title-big);
   color: var(--font-color-grey-dark);
@@ -26,20 +26,20 @@ a {
   text-decoration: underline;
 }
 
-.title--small {
+.title__small {
   font-weight: 200;
   font-size: var(--font-size-title-small);
   color: var(--font-color-grey-dark);
   margin-bottom: 20px;
 }
 
-.title--xsmall {
+.title__xsmall {
   font-weight: 200;
   font-size: var(--font-size-title-xsmall);
   color: var(--font-color-grey-dark);
   margin-bottom: 20px;
 }
 
-.main--wrapper {
+.main__wrapper {
   padding: 0 20px 0 20px;
 }

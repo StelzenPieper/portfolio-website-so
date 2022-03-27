@@ -1,5 +1,5 @@
-/*---------- NAV ---------*/
-.container--nav {
+/*__________ NAV ________-*/
+.container__nav {
   max-width: 1040px;
   display: flex;
   flex-direction: row;
@@ -26,7 +26,7 @@
   align-items: center;
 }
 
-.nav--link {
+.nav__link {
   color: var(--main-font-color-light);
   text-decoration: none;
   margin: 0 10px 0 10px;
@@ -34,12 +34,12 @@
   font-size: var(--font-size-text);
 }
 
-.nav--link:hover {
+.nav__link:hover {
   color: var(--font-color-grey-light);
   transition: 0.2s ease-in-out;
 }
 
-.nav--link:active {
+.nav__link:active {
   text-decoration: underline;
 }
 
@@ -71,7 +71,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .menu--options {
+  .menu__options {
     display: none;
   }
 }

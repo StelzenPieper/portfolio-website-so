@@ -1,4 +1,4 @@
-/*---------- SOCIALS ---------*/
+/*__________ SOCIALS ________-*/
 .socials {
   margin: var(--section-margin);
   min-height: 200px;
@@ -9,7 +9,7 @@
   flex-wrap: wrap;
 }
 
-.social--links {
+.social__links {
   font-size: 2rem;
   font-weight: 200;
   color: var(--font-color-grey-dark);

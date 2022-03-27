@@ -1,4 +1,4 @@
-/*---------- HERO ---------*/
+/*__________ HERO ________-*/
 .hero {
   background-image: url("/assets/img/Animated\ Shape.svg");
   min-height: 700px;
@@ -12,20 +12,20 @@
   flex-wrap: wrap;
 }
 
-.hero--title {
+.hero__title {
   font-size: 3rem;
   font-weight: 200;
   margin-bottom: 5px;
   color: white;
 }
 
-.hero--skills {
+.hero__skills {
   font-size: 2.5rem;
   margin-bottom: 5px;
   font-weight: 200;
 }
 
-.hero--location {
+.hero__location {
   font-size: 1rem;
   color: white;
   font-weight: 200;

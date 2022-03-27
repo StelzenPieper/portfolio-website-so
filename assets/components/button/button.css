@@ -1,5 +1,5 @@
-/*---------- BUTTON ---------*/
-.btn--contact {
+/*__________ BUTTON ________-*/
+.btn__contact {
   background: white;
   color: var(--main-font-color-dark);
   font-weight: 200;
@@ -11,13 +11,13 @@
   text-align: center;
 }
 
-.btn--contact:hover {
+.btn__contact:hover {
   background: transparent;
   color: var(--main-font-color-light);
   transition: 0.2s ease-in-out;
 }
 
-.btn--cta {
+.btn__cta {
   background-color: var(--background-color-light);
   border: none;
   box-shadow: var(--box-shadow);
@@ -30,7 +30,7 @@
   cursor: pointer;
 }
 
-.btn--cta:hover {
+.btn__cta:hover {
   transform: scale(1.4);
   transition: 0.3s ease-in-out;
 }

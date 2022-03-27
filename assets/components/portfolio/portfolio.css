@@ -1,12 +1,12 @@
-/*---------- PORTFOLIO ---------*/
-.portfolio--wrapper {
+/*__________ PORTFOLIO ________-*/
+.portfolio__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: var(--section-margin);
 }
 
-.card--list {
+.card__list {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,26 +31,26 @@
   transition: 0.3s ease-in-out;
 }
 
-.card--img {
+.card__img {
   height: 50px;
   width: 50px;
   margin: 0 0 40px 0;
   border-radius: var(--border-radius);
 }
 
-.card--text {
+.card__text {
   display: flex;
   align-items: space-around;
   flex-direction: column;
   flex-wrap: wrap;
 }
 
-.card--title {
+.card__title {
   font-weight: 500;
   margin: 0 0 5px 0;
 }
 
-.card--description {
+.card__description {
   font-weight: 200;
   margin: 0 0 5px 0;
 }
