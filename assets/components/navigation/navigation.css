@@ -81,3 +81,12 @@
     display: none;
   }
 }
+
+.sidebar {
+  width: 200px;
+  height: 100vh;
+  background: blue;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
